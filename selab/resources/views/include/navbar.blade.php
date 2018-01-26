@@ -24,7 +24,7 @@
 			
 			<ul class="nav navbar-nav">
 				<li><a href="/">Home</a></li>
-				<li><a href="/students">Book a slot</a></li>
+				<li><a href="/bookings">Book a slot</a></li>
 				<li><a href="/tutorials">Tutorials</a></li>
 			</ul>
 			

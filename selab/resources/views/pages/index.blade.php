@@ -2,7 +2,7 @@
 
 @section('content')
 	<div class="jumbotron text-center">
-		<h1>Welcome to the UK SE Lab Portal!</h1>
+		<h1>Welcome to the UK SE Lab Portal</h1>
 		<p>
 			<a class="btn btn-primary bt-lg" href="/login" role="button">Login</a>
 			<a class="btn btn-success bt-lg" href="/register" role="button">Register</a>
