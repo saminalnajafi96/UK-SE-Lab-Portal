@@ -16,7 +16,7 @@
 	Route::get('/tutorials','PagesController@tutorials');
 	
 	// BookingsController
-	Route::resource('/bookings', 'BookingsController');
+	Route::resource('bookings', 'BookingsController');
 	
 	// Auth
 	Auth::routes();

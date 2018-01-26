@@ -24,10 +24,7 @@ class BookingsController extends Controller
     public function index()
     {
 	    $title = 'Book a slot';
-	    return view('bookings.index',
-			    ['bookings' => Booking::orderBy('start_time')
-					    ->get()])
-			    ->with('title',$title);
+	    return view('bookings.index')->with('title',$title);
     }
 
     /**
