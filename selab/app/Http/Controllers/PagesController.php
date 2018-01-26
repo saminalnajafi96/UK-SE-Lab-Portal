@@ -13,11 +13,6 @@ class PagesController extends Controller
 		return view('pages.index')->with('title',$title);
 	}
 	
-	public function bookings(){
-		$title = 'Book a slot';
-		return view('pages.bookings')->with('title',$title);
-	}
-	
 	public function tutorials(){
 		$title = 'Tutorials';
 		return view('pages.tutorials')->with('title',$title);

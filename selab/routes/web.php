@@ -14,7 +14,9 @@
 // PagesController
 Route::get('/','PagesController@index');
 Route::get('/tutorials','PagesController@tutorials');
-Route::get('/bookings','PagesController@bookings');
+
+// BookingsController
+Route::get('/bookings','BookingsController@index');
 
 // Auth
 Auth::routes();
