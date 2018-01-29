@@ -100,9 +100,9 @@
 		*/
 			
 			'custom' => [
-					'email' => [
-							'email_domain' => 'Please use your NetApp email only',
-					],
+//					'email' => [
+//							'regex' => 'Please use your NetApp email only',
+//					],
 					'attribute-name' => [
 							'rule-name' => 'custom-message',
 					],

@@ -53,7 +53,7 @@
 		{
 			return Validator::make($data, [
 					'name' => 'required|string|max:255',
-					'email' => 'required|email_domain:' . $data['email'] . '|max:255|unique:users',
+					'email' => 'required|max:255|regex:/(.*)@netapp\.com/i|unique:users',
 					'password' => 'required|string|min:6|confirmed',
 			]);
 		}

@@ -18,11 +18,11 @@ class AppServiceProvider extends ServiceProvider
 	    Schema::defaultStringLength(191);
 	    
 	    // Ensures only NetApp emails are used
-	    \Validator::extend('email_domain', function($attribute, $value, $parameters, $validator) {
-		    $allowedEmailDomains = ['netapp.com'];
-		    
-		    return in_array( explode('@', $parameters[0]), $allowedEmailDomains);
-	    });
+//	    \Validator::extend('email_domain', function($attribute, $value, $parameters, $validator) {
+//		    $allowedEmailDomains = ['netapp.com'];
+//
+//		    return in_array(explode('@', $parameters[0]), $allowedEmailDomains);
+//	    });
     }
 
     /**
