@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Environment;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+    	$environments = Environment::orderBy('id','asc')->paginate(5);
+        return view('home')->with('environments',$environments);
     }
 }

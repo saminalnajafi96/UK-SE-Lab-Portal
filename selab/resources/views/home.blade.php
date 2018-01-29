@@ -8,35 +8,19 @@
                     <div class="panel-heading">Welcome, {{ Auth::user()->name }}</div>
                     
                     <div class="panel-body">
-                        @if (session('status'))
-                            <div class="alert alert-success">
-                                {{ session('status') }}
-                            </div>
+                        @if(count($environments) > 0)
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>Environment Name</th>
+                                </tr>
+                                @foreach($environments as $environment)
+                                    <tr>
+                                        <td>{{$environment->environment_name}}</td>
+                                    </tr>
+                                @endforeach
+                            </table>
+                            {{$environments->links()}}
                         @endif
-                        <table class="table table-striped">
-                            <thead>
-                            <tr>
-                                <th>Environment Name</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <a href="ASE.html">ASE Cluster</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="SE.html">SE Cluster</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="SE_Cluster3.html">SE Cluster 3</a>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
             </div>
