@@ -7,9 +7,10 @@
 <body>
 <h2>Welcome to the site {{$user['name']}}</h2>
 <br/>
-Your registered email-id is {{$user['email']}} , Please click on the below link to verify your email account
-<br/>
+Your registered email-id is {{$user['email']}} , Please click on the below link to verify your email account:
 <a href="{{url('user/verify', $user->verifyUser->token)}}">Verify Email</a>
+<br/>
+Please do not reply to this email
 </body>
 
 </html>
