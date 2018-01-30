@@ -15,7 +15,7 @@
                                 </tr>
                                 @foreach($environments as $environment)
                                     <tr>
-                                        <td>{{$environment->environment_name}}</td>
+                                        <td><a href="">{{$environment->environment_name}}</a></td>
                                     </tr>
                                 @endforeach
                             </table>

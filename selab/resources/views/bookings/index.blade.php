@@ -15,10 +15,10 @@
 							<h3>Available slots</h3>
 							<table class="table table-striped">
 								<tr>
-									<th>First Name</th>
-									<th>Last Name</th>
-									<th>City</th>
-									<th></th>
+									<th>Date</th>
+									<th>Time</th>
+									<th>Status</th>
+									<th>Book slot</th>
 								</tr>
 							</table>
 							@endif

@@ -24,4 +24,6 @@
 	
 	// Register
 	Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
-
+	
+	// Environments
+	Route::get('/environments', 'EnvironmentsController@index');
