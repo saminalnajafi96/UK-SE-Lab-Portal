@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Illuminate\Http\Request;
 
 class BookingsController extends Controller
@@ -23,8 +24,12 @@ class BookingsController extends Controller
      */
     public function index()
     {
+    	$slots = DB::table('calendar')->get();
 	    $title = 'Book a slot';
-	    return view('bookings.index')->with('title',$title);
+	    return view('bookings.index')->with([
+	    		'title' => $title,
+			    'slots' => $slots
+	    ]);
     }
 
     /**

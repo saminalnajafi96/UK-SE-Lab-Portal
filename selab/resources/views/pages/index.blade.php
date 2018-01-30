@@ -17,6 +17,7 @@
 				<div class="panel-body">
 					<p>
 						The SE Lab portal is designed for SEs to access the kit in the SE Lab in a simple and easy to use manner.
+						It's recommended to be used for testing to answer technical questions as well as a self-learning environment.
 					</p>
 				</div>
 			</div>
