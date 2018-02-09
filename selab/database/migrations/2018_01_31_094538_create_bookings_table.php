@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEnvironmentsTable extends Migration
+class CreateBookingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateEnvironmentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('environments', function (Blueprint $table) {
+        Schema::create('bookings', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('environment_name');
-            $table->mediumText('description');
-            $table->mediumText('updates');
+            $table->integer('user_id');
+            $table->integer('date_id');
+            $table->string('booking_password');
+            $table->timestamps();
         });
     }
 
@@ -28,6 +29,6 @@ class CreateEnvironmentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('environments');
+        Schema::dropIfExists('bookings');
     }
 }
