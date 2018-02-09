@@ -1,13 +1,14 @@
-NO INTERNAL INFO ON HERE
+**_NO INTERNAL INFO ON HERE_**
 
 # UK SE Lab Portal
 Web portal for the UK SE Lab created by Samin Alnajafi. This uses Laravel 5.5
 
-# Cloning project
+## Cloning project
 `git clone github.com/saminalnajafi96/UK-SE-Lab-Portal.git`
 
-# Features
+## Features
 * Homepage
 * Login/Registration
 * Email verification (send email)
 * Email validation (@netapp.com only)
+* Booking system
