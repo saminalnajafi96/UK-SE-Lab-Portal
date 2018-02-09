@@ -28,7 +28,7 @@
 			// $schedule->command('inspire')
 			//          ->hourly();
 			$schedule->call(function() {
-				for($i=0;$i<5;$i++){
+				for($i=0;$i<14;$i++){
 					$startDate = now();
 					$date = date('Y-m-d', strtotime($startDate . "+".$i." day"));
 					
@@ -38,11 +38,10 @@
 					]);
 				}
 			})->everyMinute();
-					/*
-					->weekly()
-					->mondays()
-					->at('00:00');
-					*/
+//					->weekly(2)
+//					->mondays()
+//					->at('00:00');
+			
 		}
 		
 		/**
