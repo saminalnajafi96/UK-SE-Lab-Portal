@@ -32,7 +32,6 @@
 										<th></th>
 									</tr>
 									@foreach($slots as $slot)
-										@if($slot->status = 1)
 											<tr>
 												<td>{{$slot->date}}</td>
 												<td>{{$slot->time}}</td>
@@ -43,7 +42,6 @@
 													{!! Form::close() !!}
 												</td>
 											</tr>
-										@endif
 									@endforeach
 								</table>
 							@else
