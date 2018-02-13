@@ -8,19 +8,8 @@
                     <div class="panel-heading">Welcome, {{ Auth::user()->name }}</div>
                     
                     <div class="panel-body">
-                        @if(count($environments) > 0)
-                            <table class="table table-striped">
-                                <tr>
-                                    <th>Environment Name</th>
-                                </tr>
-                                @foreach($environments as $environment)
-                                    <tr>
-                                        <td><a href="">{{$environment->environment_name}}</a></td>
-                                    </tr>
-                                @endforeach
-                            </table>
-                            {{$environments->links()}}
-                        @endif
+                        <h3>Your Bookings</h3>
+                        
                     </div>
                 </div>
             </div>
