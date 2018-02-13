@@ -18,6 +18,9 @@
 					<p>
 						The SE Lab portal is designed for SEs to access the kit in the SE Lab in a simple and easy to use manner.
 						It's recommended to be used for testing to answer technical questions as well as a self-learning environment.
+						<br/><br/>
+						For support or any questions, please send an email to <strong>ng-ukselabportal</strong>. Or, if you are logged in, you can send an email directly
+						through the Support page
 					</p>
 				</div>
 			</div>
