@@ -22,8 +22,8 @@
 	Auth::routes();
 	Route::get('/home', 'HomeController@index');
 	
-	// Register
+	// Email verification
 	Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
 	
-	// Environments
-	Route::get('/environments', 'EnvironmentsController@index');
+	// EnvironmentsController
+	Route::resource('environments', 'EnvironmentsController');
