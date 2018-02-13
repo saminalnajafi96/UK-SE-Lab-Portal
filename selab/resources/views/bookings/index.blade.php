@@ -14,7 +14,7 @@
 						<div class="panel-body">
 							<p>
 								There are <strong>two</strong> available slots per working day (4 hours each). Once you book a slot, you will be able to connect
-								to the kit in the lab through the dashboard. You will not be able to rebook or cancel your booking so please
+								to the kit in the lab through the Environments tab. You will not be able to rebook or cancel your booking so please
 								make sure you will definitely be using the lab if you have booked it.
 							</p>
 							<strong>Do not: </strong>
@@ -32,11 +32,16 @@
 										<th></th>
 									</tr>
 									@foreach($slots as $slot)
-										@if($slot->status == 0)
+										@if($slot->status = 1)
 											<tr>
 												<td>{{$slot->date}}</td>
 												<td>{{$slot->time}}</td>
-												<td><button class="btn btn-primary">Book</button></td>
+												<td>
+													{!! Form::open(['action' => 'BookingsController@store','method' => 'POST']) !!}
+													<input name="id" value="{{$slot->id}}" type="hidden">
+													<button class="btn btn-primary pull-right" type="submit">Book</button>
+													{!! Form::close() !!}
+												</td>
 											</tr>
 										@endif
 									@endforeach
