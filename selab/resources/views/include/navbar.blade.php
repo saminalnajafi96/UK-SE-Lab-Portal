@@ -25,6 +25,7 @@
 			<ul class="nav navbar-nav">
 				<li><a href="/">Home</a></li>
 				<li><a href="/bookings">Book a slot</a></li>
+				<li><a href="/environments">Environments</a></li>
 				<li><a href="/tutorials">Tutorials</a></li>
 			</ul>
 			
@@ -43,6 +44,9 @@
 							<ul class="dropdown-menu">
 								<li>
 									<a href="/home">Dashboard</a>
+								</li>
+								<li>
+									<a href="/home">Support</a>
 								</li>
 								<li>
 									<a href="{{ route('logout') }}"
