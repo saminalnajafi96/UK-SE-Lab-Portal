@@ -24,7 +24,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-    	$environments = Environment::orderBy('id','asc')->paginate(5);
-        return view('home')->with('environments',$environments);
+        return view('home');
     }
 }
