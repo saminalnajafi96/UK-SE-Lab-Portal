@@ -22,7 +22,10 @@
     </div>
 </div>
 
-<!-- Scripts -->
-<script src="{{ asset('js/app.js') }}"></script>
+<!-- Scripts and stuff on bottom so page loads faster -->
+<script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+<script type="text/javascript" src="{{asset('js/jquery.zoom.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/Functions.js')}}"></script>
+<link rel="stylesheet" href="{{ asset('css/style.css')}}"/>
 </body>
 </html>
