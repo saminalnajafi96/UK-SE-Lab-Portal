@@ -1,0 +1,37 @@
+.legend img {
+    width: 100%;
+}
+
+.system {
+    position: relative;
+    width: auto;
+}
+
+.front:hover {
+    cursor: pointer;
+}
+
+.details {
+    display: none;
+}
+
+.system img {
+    width: 280px;
+}
+
+.back {
+    display: none;
+}
+
+
+.zoom img {
+    width: 420px;
+}
+
+.zoom {
+    display: inline-block;
+}
+
+.tooltip {
+    width: 100%
+}
