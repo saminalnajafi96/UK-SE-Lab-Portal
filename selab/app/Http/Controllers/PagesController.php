@@ -17,4 +17,9 @@ class PagesController extends Controller
 		$title = 'Tutorials';
 		return view('pages.tutorials')->with('title',$title);
 	}
+	
+	public function support(){
+		$title = 'Support page';
+		return view('pages.support')->with('title',$title);
+	}
 }

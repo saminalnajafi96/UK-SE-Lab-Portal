@@ -46,7 +46,7 @@
 									<a href="/home">Dashboard</a>
 								</li>
 								<li>
-									<a href="/home">Support</a>
+									<a href="/support">Support</a>
 								</li>
 								<li>
 									<a href="{{ route('logout') }}"

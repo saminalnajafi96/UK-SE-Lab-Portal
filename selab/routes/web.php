@@ -14,6 +14,7 @@
 	// PagesController
 	Route::get('/','PagesController@index');
 	Route::get('/tutorials','PagesController@tutorials');
+	Route::get('/support','PagesController@support');
 	
 	// BookingsController
 	Route::resource('bookings', 'BookingsController');
