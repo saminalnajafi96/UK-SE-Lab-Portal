@@ -1,22 +1,10 @@
 $(document).ready(function () {
-    // click on the systems shows IP addresses + other details
-    $("#EF540_N1_Front").click(function() {
-        $("#hover1").toggle("slow");
+    // Click on the systems to show IP addresses + other details
+    $("#FAS2552_Front").click(function() {
+        $("#FAS2552_hover").toggle("slow");
     });
-    $("#EF540_N2_Front").click(function() {
-        $("#hover2").toggle("slow");
-    });
-    $("#SF4805_N1_Front").click(function() {
-        $("#hover3").toggle("slow");
-    });
-    $("#3250_N1_Front").click(function() {
-        $("#hover1").toggle("slow");
-    });
-    $("#3250_N2_Front").click(function() {
-        $("#hover2").toggle("slow");
-    });
-    $("#2552_Front").click(function() {
-        $("#hover1").toggle("slow");
+    $("#SF4805_Front").click(function() {
+        $("#SF4805_hover").toggle("slow");
     });
 
     // Toggle views of system by clicking on button
