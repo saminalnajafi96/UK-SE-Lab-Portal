@@ -44,6 +44,7 @@
 											</tr>
 									@endforeach
 								</table>
+								{{$slots->links()}}
 							@else
 								There are no available slots.
 							@endif

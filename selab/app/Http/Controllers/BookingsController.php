@@ -30,10 +30,9 @@
 		{
 			$slots = Calendar::orderBy('id','asc')
 					->where([
-							['date', '>=', date('Y-m-d')],
-							['time', '>', time()],
+							['date', '>', date('Y-m-d')],
 							['status', '=', 0],
-					])->get();
+					])->paginate(5);
 			//			$slots = DB::table('calendar')->where([
 			//					['date', '>=', date('Y-m-d')],
 			//					['time', '>', time()],
