@@ -23,6 +23,7 @@
 </div>
 
 <!-- Scripts and stuff on bottom so page loads faster -->
+<link rel="stylesheet" href="{{ asset('css/app.css')}}"/>
 <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 <script type="text/javascript" src="{{asset('js/jquery.zoom.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/Functions.js')}}"></script>
