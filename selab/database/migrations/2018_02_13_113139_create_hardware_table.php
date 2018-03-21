@@ -16,10 +16,13 @@ class CreateHardwareTable extends Migration
         Schema::create('hardware', function (Blueprint $table) {
             $table->increments('id');
             $table->string('model');
+            $table->integer('node_number');
             $table->string('os');
-            $table->string('path_to_image');
+            $table->string('front_image');
+            $table->string('back_image');
             $table->string('node_ip');
 	        $table->string('management_ip')->nullable();
+	        $table->integer('button'); // Removes duplicate connect buttons due to HA pair (e.g. FAS2552)
 	        $table->integer('environment_id');
         });
     }
