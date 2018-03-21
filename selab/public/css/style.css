@@ -2,17 +2,21 @@
     width: 100%;
 }
 
-.system {
-    position: relative;
-    width: auto;
+.group-panel {
+    margin-bottom: 50px;
+}
+
+.custom-panel {
+    height: 250px;
+}
+
+.system img{
+    width: 100%;
+    margin: 8px;
 }
 
 .front:hover {
-    cursor: pointer;
-}
-
-.details {
-    display: none;
+    cursor: default;
 }
 
 .system img {
@@ -23,9 +27,12 @@
     display: none;
 }
 
+.back img {
+    width: 100%;
+}
 
 .zoom img {
-    width: 420px;
+    width: 100%;
 }
 
 .zoom {
