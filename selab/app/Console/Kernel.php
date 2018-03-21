@@ -28,9 +28,14 @@
 			// $schedule->command('inspire')
 			//          ->hourly();
 			$schedule->call(function() {
+				$startDate = now();
 				for($i=0;$i<14;$i++){
-					$startDate = now();
-					$date = date('Y-m-d', strtotime($startDate . "+".$i." day"));
+					if($i == 5 || $i == 12){
+						$i += 2;
+					}
+					$date = date_create($startDate . "+".$i." day");
+					//$date = date('Y-m-d', strtotime($startDate . "+".$i." day"));
+					date_format($date,"d/m/Y");
 					
 					DB::table('calendar')->insert([
 							['date' => $date, 'time' => '09:00',],
