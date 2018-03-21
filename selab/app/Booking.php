@@ -17,7 +17,7 @@
 		}
 		
 		public function calendar(){
-			return $this->hasMany('App\Calendar', 'id');
+			return $this->hasMany('App\Calendar', 'date_id');
 		}
 		
 		public function calendarDate($id){

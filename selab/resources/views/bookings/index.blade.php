@@ -20,7 +20,7 @@
 							<strong>Do not: </strong>
 							<ul>
 								<li>Book on behalf of someone else</li>
-								<li>Book multiple sessions (allow the chance for others to use)</li>
+								<li>Book more sessions than you actually need (allow the chance for others to use)</li>
 							</ul>
 							<br/> <hr/>
 							<h3>Available slots</h3>
