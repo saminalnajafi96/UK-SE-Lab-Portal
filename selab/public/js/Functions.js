@@ -1,11 +1,5 @@
 $(document).ready(function () {
-    // Click on the systems to show IP addresses + other details
-    $("#FAS2552_Front").click(function() {
-        $("#FAS2552_hover").toggle("slow");
-    });
-    $("#SF4805_Front").click(function() {
-        $("#SF4805_hover").toggle("slow");
-    });
+    $('.input-password').hide();
 
     // Toggle views of system by clicking on button
     $("#frontButton").click(function() {
@@ -15,6 +9,10 @@ $(document).ready(function () {
     $("#backButton").click(function() {
         $(".front").hide();
         $(".back").show("slow");
+    });
+
+    $(".connect").click(function() {
+        $('.input-password').show();
     });
 
     // Zooming into rear view of system
