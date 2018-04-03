@@ -28,19 +28,18 @@
 			// $schedule->command('inspire')
 			//          ->hourly();
 			$schedule->call(function() {
-				$startDate = now();
+				$startDate = date('Y/m/d');
+				$date = $startDate;
 				for($i=0;$i<14;$i++){
 					if($i == 5 || $i == 12){
 						$i += 2;
 					}
-					$date = date_create($startDate . "+".$i." day");
-					//$date = date('Y-m-d', strtotime($startDate . "+".$i." day"));
-					date_format($date,"d/m/Y");
 					
 					DB::table('calendar')->insert([
-							['date' => $date, 'time' => '09:00',],
-							['date' => $date, 'time' => '13:30',],
+							['date' => $date, 'time' => '09:00:00',],
+							['date' => $date, 'time' => '13:30:00',],
 					]);
+					$date++;
 				}
 			})->everyMinute();
 //					->weekly(2)
