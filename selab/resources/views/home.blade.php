@@ -15,14 +15,12 @@
                                     <th>Booking ID</th>
                                     <th>Date</th>
                                     <th>Time</th>
-                                    <th>Password</th>
                                 </tr>
                             @foreach($bookings as $booking)
                                 <tr>
                                     <td>{{$booking->id}}</td>
                                     <td>{{$booking->calendarDate($booking->date_id)}}</td>
                                     <td>{{$booking->calendarTime($booking->date_id)}}</td>
-                                    <td>{{$booking->booking_password}}</td>
                                 </tr>
                             @endforeach
                             </table>
