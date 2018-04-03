@@ -81,7 +81,8 @@
 			$booking->save();
 			
 			return redirect('/bookings')->with([
-					'success' => 'Booking successful! Here is your temporary password: '.$otp.'. Please make sure you have this at hand as you will need it to connect to the environments',
+					//'success' => 'Booking successful! Here is your temporary password: '.$otp.'. Please make sure you have this at hand as you will need it to connect to the environments',
+					'success' => 'Booking successful! Go to your dashboard to see your bookings',
 			]);
 		}
 		
