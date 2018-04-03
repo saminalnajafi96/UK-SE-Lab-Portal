@@ -27,4 +27,9 @@
 	Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
 	
 	// EnvironmentsController
-	Route::resource('environments', 'EnvironmentsController');
+	Route::get('/environments', 'EnvironmentsController@index');
+	Route::get('/environments/{environment_name}/{id}', [
+			'as' => 'environments.show', 'uses' => 'EnvironmentsController@show']);
+	Route::get('/environments/checkPass', [
+			'as' => 'environments.checkPass', 'uses' => 'EnvironmentsController@checkPass']);
+	//Route::resource('environments', 'EnvironmentsController');
