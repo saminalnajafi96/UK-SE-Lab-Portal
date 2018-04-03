@@ -15,7 +15,9 @@
 								</tr>
 								@foreach($environments as $environment)
 									<tr>
-										<td><a href="/environments/{{$environment->id}}">{{$environment->environment_name}}</a></td>
+										<td>
+											<a href="{{ route('environments.show', ['environment_name' => urlencode($environment->environment_name), 'id' => $environment->id])}}">{{$environment->environment_name}}</a>
+										</td>
 									</tr>
 								@endforeach
 							</table>
